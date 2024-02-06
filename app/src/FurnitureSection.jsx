@@ -9,6 +9,7 @@ import f5 from './image/f5.png';
 import f6 from './image/f6.png';
 import { Link } from 'react-router-dom';
 import './Furnituresection.css'
+
 const FurnitureSection = ({ addToCart }) => {
   const [addedProduct, setAddedProduct] = useState(null);
 
@@ -33,24 +34,21 @@ const FurnitureSection = ({ addToCart }) => {
 
   return (
     <div className="furniture_section">
-     <div class="headingfurniture_container">
-        <h2>
-          Our Furniture
-        </h2>
+      <div className="headingfurniture_container">
+        <h2>Our Furniture</h2>
         <p>
           which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't an
         </p>
       </div>
       {products.map((product) => (
-        
-        <div className='box product' key={product.id}>
-          <div className='image-box-fur'>
+        <div className="box product" key={product.id}>
+          <div className="image-box-fur">
             <img src={product.image} alt={product.name} />
           </div>
-          <div className='detail-box'>
+          <div className="detail-box">
             <h5>{product.name}</h5>
-            <div className='price_box'>
-              <div className='price_heading'>${product.price.toFixed(2)}</div>
+            <div className="price_box">
+              <div className="price_heading">${product.price.toFixed(2)}</div>
               <Link className="add-to-cart-link" onClick={() => handleAddToCart(product)}>Add to Cart</Link>
             </div>
           </div>
