@@ -61,12 +61,21 @@ const Header = ({ cartItemCount }) => {
             </>
           }
         />
-        <Route path="/furniture" element={<FurnitureSection />} />
-        <Route path="/about" element={<Aboutsection />} />
+        <Route path="/furniture" element={
+        <>
+        <FurnitureSection />
+        <Footersection/>
+        </>} />
+        <Route path="/about" element={
+        <>
+        <Aboutsection />
+        <Footersection/>
+        </>} />
         <Route path="/blog" element={
           <>
             <Blog />
-            <ClientSection />
+            <Footersection/>
+            
           </>
         } />
         <Route
@@ -74,6 +83,7 @@ const Header = ({ cartItemCount }) => {
           element={
             <>
               <Contactus />
+              <Footersection/>
               <Yearsection />
             </>
           }
