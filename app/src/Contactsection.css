@@ -2,7 +2,7 @@
 .contact_section {
     position: relative;
     background-color: #f9fafa;;
-    margin-top: 200px;
+    margin-top: 50px;
     padding-left: 80px;
     margin-left: 80px;
     margin-right: 80px;
@@ -22,7 +22,7 @@
   }
   
   .contact_section .form_container input {
-    width: 100%;
+    width: 150%;
     border: none;
     height: 50px;
     margin-bottom: 25px;

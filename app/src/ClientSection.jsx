@@ -20,8 +20,7 @@ const ClientSection = () => {
           <h2>Testimonial</h2>
         </div>
         <Carousel activeIndex={index} onSelect={handleSelect} id="carouselExample2Controls" 
-        prevIcon={<CustomPrevIcon />}
-        nextIcon={<CustomNextIcon />}>
+        >
           <Carousel.Item>
             <Row>
               <Col md={11} lg={10} className="mx-auto">
@@ -95,12 +94,6 @@ const ClientSection = () => {
     </section>
   );
 };
-const CustomPrevIcon = () => (
-  <span className="custom-carousel-prev-icon"> </span>
-);
 
-const CustomNextIcon = () => (
-  <span className="custom-carousel-next-icon"></span>
-);
 
 export default ClientSection;
